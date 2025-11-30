@@ -1,0 +1,55 @@
+{
+  "key": "confluence-chatbot-plugin",
+  "name": "Confluence ChatGPT Assistant",
+  "baseUrl": "https://frutescent-delmy-noncogently.ngrok-free.dev",
+  "authentication": {
+    "type": "jwt"
+  },
+  "scopes": ["READ"],
+  "modules": {
+    "webItems": [
+      {
+        "key": "chatbot-launcher",
+        "location": "system.content.toolbar/floating",
+        "tooltip": {
+          "value": "Ask AI Assistant"
+        },
+        "icon": {
+          "width": 24,
+          "height": 24,
+          "url": "/assets/chat-icon.png"
+        },
+        "name": {
+          "value": "Ask AI"
+        },
+        "target": {
+          "type": "dialog",
+          "options": {
+            "dialogKey": "chat-dialog",
+            "width": "medium",
+            "height": "medium"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "user_is_logged_in",
+            "invert": false
+          }
+        ]
+      }
+    ],
+    "dialogs": [
+      {
+        "key": "chat-dialog",
+        "title": {
+          "value": "AI Chat Assistant"
+        },
+        "url": "/index.html",
+        "options": {
+          "size": "large",
+          "chrome": true
+        }
+      }
+    ]
+  }
+}
