@@ -1,9 +1,9 @@
 {
   "key": "confluence-chatbot-plugin",
   "name": "Confluence ChatGPT Assistant",
-  "baseUrl": "https://raw.githubusercontent.com/christianpfister43/smarthome/refs/heads/master",
+  "baseUrl": "https://christianpfister43.github.io/smarthome",
   "authentication": {
-    "type": "jwt"
+    "type": "none"
   },
   "scopes": ["READ"],
   "modules": {
@@ -53,3 +53,4 @@
     ]
   }
 }
+
