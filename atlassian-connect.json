@@ -1,9 +1,9 @@
 {
   "key": "confluence-chatbot-plugin",
   "name": "Confluence ChatGPT Assistant",
-  "baseUrl": "https://christianpfister43.github.io/smarthome",
+  "baseUrl": "https://raw.githubusercontent.com/christianpfister43/smarthome/refs/heads/master",
   "authentication": {
-    "type": "none"
+    "type": "jwt"
   },
   "scopes": ["READ"],
   "modules": {
@@ -13,6 +13,11 @@
         "location": "system.content.toolbar/floating",
         "tooltip": {
           "value": "Ask AI Assistant"
+        },
+        "icon": {
+          "width": 24,
+          "height": 24,
+          "url": "/assets/chat-icon.png"
         },
         "name": {
           "value": "Ask AI"
@@ -39,7 +44,7 @@
         "title": {
           "value": "AI Chat Assistant"
         },
-        "url": "index.html",
+        "url": "/index.html",
         "options": {
           "size": "large",
           "chrome": true
@@ -48,9 +53,3 @@
     ]
   }
 }
-
-
-
-
-
-
