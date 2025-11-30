@@ -25,10 +25,10 @@
         "target": {
           "type": "dialog",
           "options": {
-            "key": "chat-dialog",
             "width": "medium",
             "height": "medium"
-          }
+          },
+          "key": "chat-dialog"
         },
         "conditions": [
           {
@@ -52,4 +52,3 @@
     ]
   }
 }
-
