@@ -44,7 +44,7 @@
         "title": {
           "value": "AI Chat Assistant"
         },
-        "url": "/index.html",
+        "url": "index.html",
         "options": {
           "size": "large",
           "chrome": true
@@ -53,6 +53,7 @@
     ]
   }
 }
+
 
 
 
