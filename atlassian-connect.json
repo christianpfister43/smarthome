@@ -17,7 +17,7 @@
         "icon": {
           "width": 24,
           "height": 24,
-          "url": "/assets/chat-icon.png"
+          "url": "https://christianpfister43.github.io/smarthome/assets/chat-icon.png"
         },
         "name": {
           "value": "Ask AI"
@@ -44,7 +44,7 @@
         "title": {
           "value": "AI Chat Assistant"
         },
-        "url": "/index.html",
+        "url": "https://christianpfister43.github.io/smarthome/index.html",
         "options": {
           "size": "large",
           "chrome": true
@@ -53,4 +53,5 @@
     ]
   }
 }
+
 
