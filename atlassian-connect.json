@@ -3,7 +3,7 @@
   "name": "Confluence ChatGPT Assistant",
   "baseUrl": "https://christianpfister43.github.io/smarthome",
   "authentication": {
-    "type": "jwt"
+    "type": "none"
   },
   "scopes": ["READ"],
   "modules": {
@@ -53,3 +53,4 @@
     ]
   }
 }
+
