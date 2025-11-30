@@ -11,6 +11,7 @@
       {
         "key": "chatbot-launcher",
         "location": "system.content.action",
+        "url": "index.html",
         "tooltip": {
           "value": "Ask AI Assistant"
         },
@@ -52,3 +53,4 @@
     ]
   }
 }
+
