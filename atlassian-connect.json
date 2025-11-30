@@ -23,19 +23,31 @@
           "value": "Ask AI"
         },
         "target": {
-          "type": "dialogmodule",
-          "url": "index.html",
+          "type": "dialog",
           "options": {
+            "dialogKey": "chat-dialog",
             "width": "medium",
             "height": "medium"
           }
         },
         "conditions": [
           {
-            "condition": "user_is_logged_in",
-            "invert": false
+            "condition": "user_is_logged_in"
           }
         ]
+      }
+    ],
+    "dialogs": [
+      {
+        "key": "chat-dialog",
+        "url": "index.html",
+        "title": {
+          "value": "AI Chat Assistant"
+        },
+        "options": {
+          "size": "large",
+          "chrome": true
+        }
       }
     ]
   }
