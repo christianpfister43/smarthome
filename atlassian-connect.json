@@ -44,7 +44,7 @@
         "title": {
           "value": "AI Chat Assistant"
         },
-        "url": "smarthome/index.html",
+        "url": "index.html",
         "options": {
           "size": "large",
           "chrome": true
@@ -53,4 +53,5 @@
     ]
   }
 }
+
 
