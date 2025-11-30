@@ -1,57 +1,20 @@
 {
-  "key": "confluence-chatbot-plugin",
-  "name": "Confluence ChatGPT Assistant",
+  "key": "minimal-test-plugin",
+  "name": "Minimal Test Plugin",
   "baseUrl": "https://christianpfister43.github.io/smarthome",
   "authentication": {
     "type": "none"
   },
   "scopes": ["READ"],
   "modules": {
-    "webItems": [
+    "generalPages": [
       {
-        "key": "chatbot-launcher",
-        "location": "system.content.toolbar/floating",
-        "tooltip": {
-          "value": "Ask AI Assistant"
-        },
-        "icon": {
-          "width": 24,
-          "height": 24,
-          "url": "smarthome/assets/chat-icon.png"
-        },
-        "name": {
-          "value": "Ask AI"
-        },
-        "target": {
-          "type": "dialog",
-          "options": {
-            "dialogKey": "chat-dialog",
-            "width": "medium",
-            "height": "medium"
-          }
-        },
-        "conditions": [
-          {
-            "condition": "user_is_logged_in",
-            "invert": false
-          }
-        ]
-      }
-    ],
-    "dialogs": [
-      {
-        "key": "chat-dialog",
-        "title": {
-          "value": "AI Chat Assistant"
-        },
+        "key": "test-page",
         "url": "index.html",
-        "options": {
-          "size": "large",
-          "chrome": true
+        "name": {
+          "value": "Test Page"
         }
       }
     ]
   }
 }
-
-
