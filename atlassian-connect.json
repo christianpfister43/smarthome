@@ -25,7 +25,7 @@
         "target": {
           "type": "dialog",
           "options": {
-            "dialogKey": "chat-dialog",
+            "key": "chat-dialog",
             "width": "medium",
             "height": "medium"
           }
@@ -52,3 +52,4 @@
     ]
   }
 }
+
