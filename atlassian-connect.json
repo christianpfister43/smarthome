@@ -1,7 +1,7 @@
 {
   "key": "confluence-chatbot-plugin",
   "name": "Confluence ChatGPT Assistant",
-  "baseUrl": "https://frutescent-delmy-noncogently.ngrok-free.dev",
+  "baseUrl": "https://raw.githubusercontent.com/christianpfister43/smarthome/refs/heads/master",
   "authentication": {
     "type": "jwt"
   },
@@ -53,3 +53,4 @@
     ]
   }
 }
+
