@@ -10,7 +10,7 @@
     "webItems": [
       {
         "key": "chatbot-launcher",
-        "location": "system.content.action",
+        "location": "system.content.toolbar/floating",
         "url": "index.html",
         "tooltip": {
           "value": "Ask AI Assistant"
@@ -53,4 +53,5 @@
     ]
   }
 }
+
 
