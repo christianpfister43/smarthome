@@ -26,8 +26,8 @@
         "target": {
           "type": "dialog",
           "options": {
-            "width": "medium",
-            "height": "medium"
+            "width": "100px",
+            "height": "200px"
           },
           "key": "chat-dialog"
         },
@@ -53,6 +53,7 @@
     ]
   }
 }
+
 
 
 
