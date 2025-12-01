@@ -10,7 +10,7 @@
     "webItems": [
       {
         "key": "chatbot-launcher",
-        "location": "system.content.toolbar/floating",
+        "location": "contentbyline/extra",
         "url": "index.html",
         "tooltip": {
           "value": "Ask AI Assistant"
@@ -41,7 +41,7 @@
     "dialogs": [
       {
         "key": "chat-dialog",
-        "url": "index.html",
+        "url": "/index.html",
         "title": {
           "value": "AI Chat Assistant"
         },
@@ -53,5 +53,6 @@
     ]
   }
 }
+
 
 
