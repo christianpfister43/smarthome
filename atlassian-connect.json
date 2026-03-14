@@ -18,7 +18,7 @@
     "webItems": [
       {
         "key": "chat-trigger-button",
-        "location": "system.header/left",
+        "location": "system.header/apps",
         "weight": 100,
         "name": {
           "value": "Ask AI Agent"
