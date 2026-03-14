@@ -8,11 +8,7 @@
   },
   "baseUrl": "https://api.o6-confluence-chat.de",
   "authentication": {
-    "type": "jwt"
-  },
-  "lifecycle": {
-    "installed": "/installed",
-    "uninstalled": "/uninstalled"
+    "type": "none"
   },
   "scopes": [
     "read",
@@ -22,21 +18,32 @@
     "webItems": [
       {
         "key": "chat-trigger-button",
-        "location": "system.header/left",
+        "location": "system.content.action",
         "weight": 100,
         "name": {
           "value": "Ask AI Agent"
         },
         "target": {
           "type": "dialog",
-          "options": {
-            "height": "100%",
-            "width": "400px",
-            "chrome": false
-          }
+          "key": "chat-dialog"
         },
-        "url": "/chat-interface?pageId={page.id}&spaceKey={space.key}"
+        "url": "/index.html?pageId={page.id}&spaceKey={space.key}"
+      }
+    ],
+    "dialogs": [
+      {
+        "key": "chat-dialog",
+        "url": "/index.html?pageId={page.id}&spaceKey={space.key}",
+        "title": {
+          "value": "AI Chat Assistant"
+        },
+        "options": {
+          "width": "400px",
+          "height": "100%",
+          "chrome": false
+        }
       }
     ]
   }
 }
+
