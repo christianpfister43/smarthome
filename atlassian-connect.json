@@ -19,7 +19,7 @@
       {
         "key": "chat-bottom-panel",
         "url": "/index.html?pageId={page.id}&spaceKey={space.key}",
-        "location": "atl.general",
+        "location": "atl.footer",
         "name": {
           "value": "Ask AI Agent"
         },
