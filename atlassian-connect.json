@@ -17,8 +17,8 @@
   "modules": {
     "webItems": [
       {
-        "key": "chat-trigger-button",
-        "location": "system.header/apps",
+        "key": "chat-dialog",
+        "location": "system.content.action",
         "weight": 100,
         "name": {
           "value": "Ask AI Agent"
