@@ -17,15 +17,43 @@
   "modules": {
     "webPanels": [
       {
-        "key": "chat-sidebar-panel",
+        "key": "chat-bottom-panel",
         "url": "/index.html?pageId={page.id}&spaceKey={space.key}",
-        "location": "atl.page.metadata",
+        "location": "atl.general",
         "name": {
           "value": "Ask AI Agent"
         },
         "layout": {
           "width": "100%",
-          "height": "500px"
+          "height": "400px"
+        }
+      }
+    ],
+    "webItems": [
+      {
+        "key": "chatbot-launcher-action",
+        "location": "system.content.action",
+        "url": "/index.html?pageId={page.id}&spaceKey={space.key}",
+        "name": {
+          "value": "Ask AI (Popup)"
+        },
+        "target": {
+          "type": "dialog",
+          "key": "chat-dialog-fallback"
+        }
+      }
+    ],
+    "dialogs": [
+      {
+        "key": "chat-dialog-fallback",
+        "url": "/index.html?pageId={page.id}&spaceKey={space.key}",
+        "title": {
+          "value": "AI Chat Assistant"
+        },
+        "options": {
+          "width": "400px",
+          "height": "100%",
+          "chrome": false
         }
       }
     ]
