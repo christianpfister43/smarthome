@@ -18,7 +18,7 @@
     "webItems": [
       {
         "key": "chat-dialog",
-        "location": "system.content.action",
+        "location": "system.header/apps",
         "weight": 100,
         "name": {
           "value": "Ask AI Agent"
