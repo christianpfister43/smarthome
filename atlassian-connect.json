@@ -1,61 +1,42 @@
 {
-  "key": "confluence-chatbot-plugin",
-  "name": "Confluence ChatGPT Assistant",
-  "baseUrl": "https://christianpfister43.github.io/smarthome",
-  "authentication": {
-    "type": "none"
+  "key": "confluence-agentic-chat-bot",
+  "name": "Intelligent Confluence Assistant",
+  "description": "A contextual chat agent powered by dynamic CQL synthesis.",
+  "vendor": {
+    "name": "Christian Pfister",
+    "url": "https://o6ventures.com"
   },
-  "scopes": ["READ"],
+  "baseUrl": "https://api.o6-confluence-chat.de",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled"
+  },
+  "scopes": [
+    "read",
+    "act_as_user"
+  ],
   "modules": {
     "webItems": [
       {
-        "key": "chatbot-launcher",
-        "location": "system.content.action",
-        "url": "index.html",
-        "tooltip": {
-          "value": "Ask AI Assistant"
-        },
-        "icon": {
-          "width": 24,
-          "height": 24,
-          "url": "https://christianpfister43.github.io/smarthome/assets/chat-icon.png"
-        },
+        "key": "chat-trigger-button",
+        "location": "system.header/left",
+        "weight": 100,
         "name": {
-          "value": "Ask AI"
+          "value": "Ask AI Agent"
         },
         "target": {
           "type": "dialog",
           "options": {
-            "width": "300px",
-            "height": "400px"
-          },
-          "key": "chat-dialog"
-        },
-        "conditions": [
-          {
-            "condition": "user_is_logged_in"
+            "height": "100%",
+            "width": "400px",
+            "chrome": false
           }
-        ]
-      }
-    ],
-    "dialogs": [
-      {
-        "key": "chat-dialog",
-        "url": "/index.html",
-        "title": {
-          "value": "AI Chat Assistant"
         },
-        "options": {
-          "size": "large",
-          "chrome": true
-        }
+        "url": "/chat-interface?pageId={page.id}&spaceKey={space.key}"
       }
     ]
   }
 }
-
-
-
-
-
-
